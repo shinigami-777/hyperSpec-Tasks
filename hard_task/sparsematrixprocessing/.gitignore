@@ -1,0 +1,16 @@
+src/rust/vendor
+src/Makevars
+src/Makevars.win
+*.o
+*.so
+*.dll
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+src/*.o
+src/*.so
+src/*.dll
+src/rust/target/
+src/.cargo/
+.DS_Store
