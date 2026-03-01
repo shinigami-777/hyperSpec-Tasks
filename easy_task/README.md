@@ -9,7 +9,7 @@
 ## Solution
 For computing the adjacency matrix 2 different methods were used:
 
-1.**Using manual construction in `create_adjacency`:** Builds the adjacency matrix of a 2D grid using 4-neighbour connectivity (up, down, left, right). It maps each grid position (r,c) to a unique node index and initializes an 
+1. **Using manual construction in `create_adjacency`:** Builds the adjacency matrix of a 2D grid using 4-neighbour connectivity (up, down, left, right). It maps each grid position (r,c) to a unique node index and initializes an 
 N×N zero matrix. For every pixel, it checks valid neighbouring positions and sets the corresponding entries in the matrix to 1.
 
 2. **Using `gridadjacencymatrix` from spatstat.sparse:** Automatically generates a sparse adjacency matrix.
@@ -17,7 +17,7 @@ N×N zero matrix. For every pixel, it checks valid neighbouring positions and se
 
 Both approaches produce the same graph structure.
 
-To find the graph laplacianthis equation is used: \
+To find the graph laplacian, this equation is used: \
 `L=D−A` \
 where
 A = adjacency matrix, D = diagonal degree matrix.
