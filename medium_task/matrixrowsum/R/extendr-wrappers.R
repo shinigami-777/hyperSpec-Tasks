@@ -11,11 +11,10 @@
 NULL
 
 #' Compute row sums of a matrix using faer
-#'
-#' @param x A numeric matrix
+#' @param matrix A numeric matrix
 #' @return A numeric vector of row sums
 #' @export
-row_sums_rust <- function(x) .Call(wrap__row_sums_rust, x)
+row_sums_rust <- function(matrix) .Call(wrap__row_sums_rust, matrix)
 
 
 # nolint end
